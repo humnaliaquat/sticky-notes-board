@@ -3,7 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/notes.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/notes.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>Stickify</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar">
+        <h1 class="logo">
+          <img src="assets/images/notes.png" alt="logo" />Stickify
+        </h1>
+        <div class="add-btn-container">
+          <button class="add-note">
+            <i class="fa-solid fa-plus"></i>
+            Add note
+          </button>
+          <div class="modal-container">
+            <div class="modal"></div>
+          </div>
+        </div>
+      </nav>
+      <!-- notes container -->
+      <div class="notes-container">
+        <div class="note notes-adding-modal">
+          <input type="text" placeholder="Enter title" class="title-input" />
+          <textarea
+            name="description"
+            id="description"
+            class="description"
+            cols="3"
+          ></textarea>
+        </div>
+        <div class="note">
+          <div class="note-header">
+            <i class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <p>Note content here...</p>
+          <i class="fa-solid add-icon"></i>
+          <!-- add -->
+        </div>
+        <div class="note">hey</div>
+        <div class="note">hey</div>
+        <div class="note">hey</div>
+        <div class="note">hey</div>
+        <div class="note">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nemo
+          molestias, repellendus officia, reprehenderit praesentium dignissimos
+          veritatis nostrum minima aliquam non quo, dicta suscipit rerum
+          provident corporis? Minus, quas doloremque?
+        </div>
+        <div class="note">hey</div>
+        <div class="note">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          ratione, magni doloribus, facere nisi dolorum architecto quod dicta
+          exercitationem ducimus, sed explicabo similique impedit temporibus
+          deserunt saepe esse corrupti iusto!y
+        </div>
+        <div class="note">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor maxime
+          consequuntur expedita a illo dolorum eveniet possimus ipsam iusto
+          eligendi ullam, error commodi similique praesentium nesciunt, dolores
+          beatae doloremque ex?
+        </div>
+      </div>
+    </div>
+    <script src="js/notes.js"></script>
+  </body>
 </html>

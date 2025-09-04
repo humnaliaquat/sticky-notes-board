@@ -6,7 +6,7 @@ Create, move, pin, and delete notes with pastel colors, emojis, and photo upload
 ---
 
 ## ✨ Features
-- ➕ Add new sticky notes with **title & content**
+- ➕ Add new sticky notes with title and content
 - 🎨 Choose pastel colors for notes
 - 📷 Upload images into notes
 - 😀 Add emojis or stickers
@@ -63,5 +63,5 @@ sticky-notes-board/
 ---
 
 ## 👩‍💻 Author
-Created by **Your Name 💜**  
+Created by **Hamna Liaquat 💜**  
 Feel free to use, modify, or improve this project!

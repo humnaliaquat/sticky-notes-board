@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Stickify</title>
   </head>
@@ -28,60 +32,97 @@
       <!-- navbar -->
       <nav class="navbar">
         <h1 class="logo">
-          <img src="assets/images/notes.png" alt="logo" />Stickify
+          <img src="assets/images/notes.png" alt="logo" />Notes
         </h1>
         <div class="add-btn-container">
-          <button class="add-note">
-            <i class="fa-solid fa-plus"></i>
-            Add note
-          </button>
           <div class="modal-container">
             <div class="modal"></div>
           </div>
         </div>
       </nav>
+      <!-- pinned notes -->
+      <div class="pinned-notes"></div>
+
       <!-- notes container -->
       <div class="notes-container">
-        <div class="note notes-adding-modal">
-          <input type="text" placeholder="Enter title" class="title-input" />
+        <div class="note-card">
+          <div class="note-header">
+            <input type="text" placeholder="Title" class="title-input" />
+            <button>
+              <i
+                class="fa-solid fa-thumbtack"
+                style="transform: rotate(45deg)"
+              ></i>
+            </button>
+          </div>
+
           <textarea
-            name="description"
-            id="description"
             class="description"
-            cols="3"
+            placeholder="Note Content..."
           ></textarea>
+
+          <div class="foter-container">
+            <!-- left side of foter -->
+            <div class="fonter-leftSide">
+              <!-- bold text btn -->
+              <button class="bold-text">
+                <i class="fa-solid fa-bold"></i>
+              </button>
+
+              <!-- Theme / Color -->
+              <button class="bg-color">
+                <i class="fa-solid fa-palette"></i>
+              </button>
+
+              <!-- Image -->
+              <button class="image">
+                <i class="fa-solid fa-image"></i>
+              </button>
+            </div>
+            <!-- Right side -->
+            <div class="foter-rightSide">
+              <button class="cancel-btn">Cancel</button>
+            </div>
+          </div>
         </div>
+
         <div class="note">
           <div class="note-header">
-            <i class="fa-solid fa-ellipsis"></i>
+            <p>Note content here...</p>
             <i class="fa-solid fa-xmark"></i>
           </div>
-          <p>Note content here...</p>
+          <div>
+            <p>note content</p>
+          </div>
           <i class="fa-solid add-icon"></i>
           <!-- add -->
-        </div>
-        <div class="note">hey</div>
-        <div class="note">hey</div>
-        <div class="note">hey</div>
-        <div class="note">hey</div>
-        <div class="note">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nemo
-          molestias, repellendus officia, reprehenderit praesentium dignissimos
-          veritatis nostrum minima aliquam non quo, dicta suscipit rerum
-          provident corporis? Minus, quas doloremque?
-        </div>
-        <div class="note">hey</div>
-        <div class="note">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          ratione, magni doloribus, facere nisi dolorum architecto quod dicta
-          exercitationem ducimus, sed explicabo similique impedit temporibus
-          deserunt saepe esse corrupti iusto!y
-        </div>
-        <div class="note">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor maxime
-          consequuntur expedita a illo dolorum eveniet possimus ipsam iusto
-          eligendi ullam, error commodi similique praesentium nesciunt, dolores
-          beatae doloremque ex?
+          <div class="foter-container">
+            <!-- left side of foter -->
+
+            <!-- bold text btn -->
+            <button class="bold-text">
+              <i class="fa-solid fa-bold"></i>
+            </button>
+
+            <!-- Theme / Color -->
+            <button class="bg-color">
+              <i class="fa-solid fa-palette"></i>
+            </button>
+
+            <!-- Image -->
+            <button class="image">
+              <i class="fa-solid fa-image"></i>
+            </button>
+            <button>
+              <i
+                class="fa-solid fa-thumbtack"
+                style="transform: rotate(45deg)"
+              ></i>
+            </button>
+            <button><i class="fa-solid fa-ellipsis"></i></button>
+
+            <!-- Right side -->
+          </div>
         </div>
       </div>
     </div>

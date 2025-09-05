@@ -30,6 +30,7 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s;
     color: black;
+    
   }
 .note:hover {
     transform: translateY(-5px);
@@ -50,12 +51,112 @@
   flex-direction: column;
   
 }
-.title-input{
+
+.pin-note{
+  background-color: transparent;
   border: none;
-  box-shadow: #FFE2E2;
-  padding: 10px 15px;
+}
+.note-card {
+  background: #FFFACD; 
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  max-width: 350px; 
+  min-height: 200px;       
+   break-inside: avoid;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  
+}
+.note-header button:hover{
+  background-color:#e9e3a4;
+}
+.note-header i{
+  font-size: 18px;
+}
+
+.title-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+   color:rgb(61, 61, 61);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Patrick Hand', cursive;
 }
 .title-input::placeholder{
-  color: rgb(226, 226, 226);
-  
+   color:rgb(61, 61, 61);
+}
+
+.description {
+  flex: 1; 
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 18px;
+  background: transparent;
+  margin: 8px 0;
+ color:rgb(61, 61, 61);
+ font-family: 'Patrick Hand', cursive;
+}
+
+.foter-container {
+  margin-top: auto;   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+  color:rgb(61, 61, 61);
+}
+
+.foter-container button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.foter-container button:hover{
+  background-color:#e9e3a4;
+}
+.fa-palette{
+  color:rgb(61, 61, 61);
+}
+.fa-image{
+  color:rgb(61, 61, 61);
+}
+.fa-bold{
+  color:rgb(61, 61, 61);
+}
+.fa-thumbtack {
+  cursor: pointer;
+  color:rgb(61, 61, 61);
+  transition: color 0.2s ease;
+}
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+.fonter-leftSide{
+  display: flex;
 }

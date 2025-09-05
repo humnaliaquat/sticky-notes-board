@@ -11,16 +11,17 @@ body {
   background-color: #FFFDF6;
   background-size: 20px 20px;
 }
-
+p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  color:rgb(61, 61, 61);
+}
 .container {
   width: 100%;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
-  
   align-items: flex-start;
-
   padding-top: 10px;
 }
 
@@ -30,21 +31,15 @@ body {
   display: flex;
   justify-content: space-between;   
   align-items: center;               
-  border-bottom: 1px solid #d1d0d0;
-  background-color: #fff;            
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+  border-bottom: 1px solid #d1d0d0; 
   position: sticky;                  
   top: 0;
   z-index: 1000;                    
 }
-
-
-
-
 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #111827;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 400;
+  color: #3b3e44;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -56,7 +51,7 @@ h3 {
 
 }
 .add-note {
-  padding: 8px 16px;          /* controls height automatically */
+  padding: 8px 16px;        
   border-radius: 25px;
   border: none; 
   background-color: #F59E0B;

@@ -6,6 +6,22 @@
   font-weight: 400;
   scrollbar-width: thin;
 }
+.note-card { background:  #fffacd; };
+/* Yellow note */
+.yellow-note { background: #fff9c4; }
+.yellow-note .foter-container button:hover { background: #fff59d; }
+
+/* Green note */
+.green-note { background: #c8e6c9; }
+.green-note .foter-container button:hover { background: #a5d6a7; }
+
+/* Blue note */
+.blue-note { background: #bbdefb; }
+.blue-note .foter-container button:hover { background: #90caf9; }
+
+/* Orange note */
+.orange-note { background: #ffe0b2; }
+.orange-note .foter-container button:hover { background: #ffcc80; }
 
 body {
   background-color: #FFFDF6;
@@ -74,4 +90,20 @@ h3 {
   display: flex;
   align-items: center;
   justify-items: center;
+}
+[contenteditable="true"]:focus {
+  outline: none;
+  border: none;
+}
+.note-image {
+  width: 100%;
+  margin-top: 8px;
+  display: none; /* hidden by default */
+}
+.note-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.note-card.has-image .note-image {
+  display: block; /* only show when class added */
 }

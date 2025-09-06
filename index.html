@@ -55,7 +55,7 @@
               ></i>
             </button>
           </div>
-
+          <div class="note-image"></div>
           <textarea
             class="description"
             placeholder="Note Content..."
@@ -81,18 +81,26 @@
             </div>
             <!-- Right side -->
             <div class="foter-rightSide">
-              <button class="cancel-btn">Cancel</button>
+              <button class="cancel-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
             </div>
           </div>
         </div>
 
         <div class="note">
           <div class="note-header">
-            <p>Note content here...</p>
+            <input type="text" placeholder="Title" class="title-input" />
             <i class="fa-solid fa-xmark"></i>
           </div>
           <div>
-            <p>note content</p>
+            <div class="note-image"></div>
+            <p class="actualNote-title" contenteditable="true">
+              Note content here...
+            </p>
+            <p class="actualNote-content" contenteditable="true">
+              note content
+            </p>
           </div>
           <i class="fa-solid add-icon"></i>
           <!-- add -->

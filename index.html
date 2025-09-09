@@ -28,110 +28,59 @@
     <title>Stickify</title>
   </head>
   <body>
+    <nav class="navbar">
+      <h1 class="logo">
+        <img src="assets/images/notes.png" alt="logo" />Notes
+      </h1>
+      <div class="add-btn-container">
+        <div class="modal-container">
+          <div class="modal"></div>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <!-- navbar -->
-      <nav class="navbar">
-        <h1 class="logo">
-          <img src="assets/images/notes.png" alt="logo" />Notes
-        </h1>
-        <div class="add-btn-container">
-          <div class="modal-container">
-            <div class="modal"></div>
-          </div>
+      <div class="note-card2">
+        <div class="note-header">
+          <input type="text" placeholder="Title" class="title-input" />
+          <button>
+            <i
+              class="fa-solid fa-thumbtack"
+              style="transform: rotate(45deg)"
+            ></i>
+          </button>
         </div>
-      </nav>
-      <!-- pinned notes -->
-      <div class="pinned-notes"></div>
+        <div class="note-image2"></div>
+        <textarea class="description" placeholder="Note Content..."></textarea>
 
-      <!-- notes container -->
-      <div class="notes-container">
-        <div class="note-card">
-          <div class="note-header">
-            <input type="text" placeholder="Title" class="title-input" />
-            <button>
-              <i
-                class="fa-solid fa-thumbtack"
-                style="transform: rotate(45deg)"
-              ></i>
-            </button>
-          </div>
-          <div class="note-image"></div>
-          <textarea
-            class="description"
-            placeholder="Note Content..."
-          ></textarea>
-
-          <div class="foter-container">
-            <!-- left side of foter -->
-            <div class="fonter-leftSide">
-              <!-- bold text btn -->
-              <button class="bold-text">
-                <i class="fa-solid fa-bold"></i>
-              </button>
-
-              <!-- Theme / Color -->
-              <button class="bg-color">
-                <i class="fa-solid fa-palette"></i>
-              </button>
-
-              <!-- Image -->
-              <button class="image">
-                <i class="fa-solid fa-image"></i>
-              </button>
-            </div>
-            <!-- Right side -->
-            <div class="foter-rightSide">
-              <button class="cancel-btn">
-                <i class="fa-solid fa-trash"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="note">
-          <div class="note-header">
-            <input type="text" placeholder="Title" class="title-input" />
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <div>
-            <div class="note-image"></div>
-            <p class="actualNote-title" contenteditable="true">
-              Note content here...
-            </p>
-            <p class="actualNote-content" contenteditable="true">
-              note content
-            </p>
-          </div>
-          <i class="fa-solid add-icon"></i>
-          <!-- add -->
-          <div class="foter-container">
-            <!-- left side of foter -->
-
-            <!-- bold text btn -->
+        <div class="foter-container">
+          <div class="fonter-leftSide">
             <button class="bold-text">
               <i class="fa-solid fa-bold"></i>
             </button>
-
-            <!-- Theme / Color -->
             <button class="bg-color">
               <i class="fa-solid fa-palette"></i>
             </button>
-
-            <!-- Image -->
-            <button class="image">
-              <i class="fa-solid fa-image"></i>
+            <button class="image"><i class="fa-solid fa-image"></i></button>
+          </div>
+          <div class="foter-rightSide">
+            <button class="cancel-btn">
+              <i class="fa-solid fa-trash"></i>
             </button>
-            <button>
-              <i
-                class="fa-solid fa-thumbtack"
-                style="transform: rotate(45deg)"
-              ></i>
-            </button>
-            <button><i class="fa-solid fa-ellipsis"></i></button>
-
-            <!-- Right side -->
           </div>
         </div>
+      </div>
+      <!-- pinned notes -->
+
+      <div class="pinned-notes">
+        <p class="pinned-title text">Pinned</p>
+        <div class="pinned-container"></div>
+      </div>
+      <!-- notes container -->
+      <div class="other">
+        <h3 class="others-title text">Other Notes</h3>
+
+        <div class="notes-container"></div>
       </div>
     </div>
     <script src="js/notes.js"></script>

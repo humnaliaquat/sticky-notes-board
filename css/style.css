@@ -3,7 +3,8 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+   color:rgb(61, 61, 61);
+  
   scrollbar-width: thin;
 }
 .note-card { background:  #fffacd; };
@@ -28,7 +29,7 @@ body {
   background-size: 20px 20px;
 }
 p{
-  font-family: 'Patrick Hand', cursive;
+  
   font-size: 18px;
   color:rgb(61, 61, 61);
 }
@@ -37,10 +38,19 @@ p{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 10px;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 50px;
+  padding: 20px 40px;
 }
 
+.other{
+   display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+ 
+}
 .navbar {
   width: 100%;
   padding: 10px 20px;              
@@ -48,12 +58,12 @@ p{
   justify-content: space-between;   
   align-items: center;               
   border-bottom: 1px solid #d1d0d0; 
-  position: sticky;                  
+  position: fixed;                  
   top: 0;
-  z-index: 1000;                    
+  z-index: 1000;           
+  background-color: #FFFDF6;         
 }
 h1 {
-  font-family: 'Patrick Hand', cursive;
   font-weight: 400;
   color: #3b3e44;
   font-size: 1.5rem;
@@ -61,10 +71,14 @@ h1 {
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #4B5563;
 
+}
+.text{
+  color: #323436;
+  font-size: 20px;
+ 
 }
 .add-note {
   padding: 8px 16px;        
@@ -78,7 +92,7 @@ h3 {
   justify-content: center;
   gap: 8px;                   
   font-size: 1rem;
-  font-weight: 500;
+  
   transition: background 0.2s;
 }
 
@@ -90,6 +104,11 @@ h3 {
   display: flex;
   align-items: center;
   justify-items: center;
+  
+}
+.logoPhoto{
+ width: 50px;
+  height: 40px;
 }
 [contenteditable="true"]:focus {
   outline: none;
@@ -104,6 +123,7 @@ h3 {
   max-width: 100%;
   border-radius: 8px;
 }
+
 .note-card.has-image .note-image {
   display: block; /* only show when class added */
 }
